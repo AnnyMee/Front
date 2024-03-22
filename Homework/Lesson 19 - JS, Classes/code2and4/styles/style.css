@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header {
+    height: 100%;
+    width: 100%;
+    gap: 30px;
+    background: linear-gradient(gray, white);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    position: sticky;
+}
+button {
+    background-color: transparent;
+    border-color: transparent;
+}
+img {
+    height: 50px;
+    width: 50px;
+}
+.item {
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+}
+.logo {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}
+footer {
+    height: 40%;
+    width: 100%;
+    background: linear-gradient(white, gray);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 50px 20px;
+    position:fixed;
+    bottom: 0;
+}
+@media screen and (min-width: 426px) {
+    footer {
+        height: 150px;
+        width: 100%;
+        background: linear-gradient(white, gray);
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 50px;
+        padding: 50px 100px;
+        position:fixed;
+        bottom: 0;
+    }
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding: 0 15px;
+}
+h3 {
+    padding: 15px 0;
+}
+p {
+    padding: 5px 0;
+}
+.icons {
+    display: flex;
+    flex-direction: row;
+}
+.contacts {
+    display: flex;
+    flex-direction: column;
+}
+img {
+    height: 30px;
+    width: 30px;
+}
+#email {
+    padding: 0;
+}
+#phone {
+    padding: 0;
+}

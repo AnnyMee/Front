@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input types</title>
+</head>
+
+<body>          <h1>New user registration</h1>
+
+    <form action="">
+
+    <label for="name-input">Insert name:</label>
+    <br>
+    <input type="text" id="name-input" placeholder="Insert your name" name="name">
+    <br>
+    
+    <label for="email-input">Insert your email address</label>
+    <br>
+    <input type="email" name="email" id="email-input" placeholder="@">
+    <br>
+    
+    <label for="pass-input">Insert a password</label>
+    <br>
+    <input type="password" name="password" id="pass-input" placeholder="Password">
+    <br>
+    
+    <label for="repeat-pass-input">Repeat your password</label>
+    <br>
+    <input type="text" name="password" id="repeat-pass-input" placeholder="Password">
+    <br>
+    
+    <label for="date-input">Birthday</label>
+    <br>
+    <input type="date" name="birthday" id="date-input">
+    <br>
+    
+    <label for="phone-input">Phone number</label>
+    <br>
+    <input type="tel" name="phone number" id="phone-input" placeholder="Your phone number">
+    <br>
+    <br>
+
+    <fieldset>
+        <input type="checkbox" name="newsletter" id="newsletter-input" checked>
+        <label for="newsletter-input">Subscribe to newsletter and promotions</label>
+        <br>
+    </fieldset>
+
+    <p style="background-color:bisque">Your gender</p>
+
+    <input type="radio" name="gender" id="sex-m" value="masc">
+    <label for="sex-m">masc</label>
+    <br>
+
+    <input type="radio" name="gender" id="sex-w" value="fem">
+    <label for="sex-w">fem</label>
+    <br>
+
+    <input type="radio" name="gender" id="sex-na" value="child">
+    <label for="sex-na">child</label>
+    <br>
+
+    <label for="age-input">Select your age</label>
+    <select name="age" id="age-input">
+        <option value="1525" selected>15-25</option>
+        <option value="2645">26-45</option>
+        <option value="100" disabled>46-120</option>
+    </select>
+    <br>
+    <br>
+
+    <label for="file-input">Select your file</label>
+    <input type="file" name="file" id="file-input">
+    <br>
+    <br>
+
+    <button type="submit">Submit</button>
+    <br>
+    <br>
+
+    <button type="reset">Clear</button>
+    <br>
+    <br>
+
+    
+</form>
+   
+</body>
+</html>

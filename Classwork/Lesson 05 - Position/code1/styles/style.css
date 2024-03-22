@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+}
+
+.position-static {
+    height: 200px;
+    width: 200px;
+    background-color: bisque;
+}
+.position-relative {
+    height: 200px;
+    width: 200px;
+    background-color: green;
+    position: relative;  /* позиция относительно главного элемента */
+    left: 50px;
+    bottom: 50px;
+}
+.position-absolute {
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+    position: absolute;  /* можно оттолкнуть от краёв */
+    top: 50px;
+    left: 50px;
+    z-index: 1;
+}
+.position-4 {
+    height: 200px;
+    width: 200px;
+    background-color: gray;
+    position: relative;
+    margin-bottom: 1500px;
+}
+.last-position-fixed {
+    height: 200px;
+    width: 200px;
+    background-color: crimson;
+    position: fixed;  /* никак не сдвинуть */
+    bottom: 10px;
+    right: 10px;
+    z-index: -2;  /* прозрачность */
+}
+.header-position-sticky {
+    height: 50px;
+    width: 1200px;
+    background-color: aquamarine;
+    position: sticky;  /* конфликтует с position fixed */
+    top: 0;
+    z-index: 100;
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input types</title>
+</head>
+<body>
+    <h1>New user registration</h1>
+    <form action="">
+        <label for="name-input">Name:</label>
+        <br>
+        <input type="text" name="name" id="name-input" placeholder="Insert your name" required>
+        <br>
+
+        <label for="email-input">E-mail:</label>
+        <br>
+        <input type="email" name="email" id="email-input" placeholder="@" required>
+        <br>
+
+        <label for="pass-input">Password:</label>
+        <br>
+        <input type="password" name="password" id="pass-input" placeholder="Insert your password" required>
+        <br>
+
+        <label for="date-input">Date of birth:</label>
+        <br>
+        <input type="date" name="date-birthday" id="date-input">
+        <br>
+
+        <label for="phone-input">Phone number:</label>
+        <br>
+        <input type="tel" name="phone-number" id="phone-input" placeholder="Insert your phone number">
+        <br>
+        <br>
+
+        <fieldset style="background-color: rgb(190, 162, 127);">
+            <input type="checkbox" name="newsletter" id="newsletter-input" checked>
+            <label for="newsletter-input">Subscribe to our newsletter</label>
+            <br>
+        </fieldset>
+        <br>
+
+        <fieldset style="background-color: blanchedalmond;">
+            <p>Tell us who you are</p>
+            <input type="radio" name="gender" id="man" value="man">
+            <label for="man">Man</label>
+            <br>
+            <input type="radio" name="gender" id="woman" value="woman">
+            <label for="woman">Woman</label>
+            <br>
+            <input type="radio" name="gender" id="child" value="child">
+            <label for="child">Child</label>
+            <br>
+        </fieldset>
+        <br>
+
+        <label for="age-input">Your age:</label>
+        <select name="age" id="age-input">
+            <option value="1525" selected>15-25</option>
+            <option value="2545">25-45</option>
+            <option value="100" disabled>45-120</option>
+        </select>
+        <br>
+        <br>
+
+        <label for="file-input"></label>
+        <input type="file" name="file" id="file-input">
+        <br>
+        <br>
+
+        <label for="color-input">Your favourite color:</label>
+        <input type="color" name="color" id="color-input">
+        <br>
+        <br>
+
+        <label for="pet-choice">Cat person</label>
+        <input type="range" name="favourite-pet" id="pet-choice" min="1" max="3" list="pet-range">
+        <label for="pet-choice">Dog person</label>
+        <datalist id="pet-range">                  <!-- можно и без тэга datalist, но так выглядит круче -->
+            <option value="1" label="1"></option>
+            <option value="2" label="2"></option>
+            <option value="3" label="3"></option>
+
+        </datalist>
+        <br>
+        <br>
+
+        <fieldset> 
+            <label for="">Please rate our page</label>
+            <br>
+
+            <input type="range" min="0" max="5" value="5" list="rangeList">
+        <datalist id="rangeList">
+            <option value="0" label="0"></option>
+            <option value="1" label="1"></option>
+            <option value="2" label="2"></option>
+            <option value="3" label="3"></option>
+            <option value="4" label="4"></option>
+            <option value="5" label="5"></option>
+        </datalist>
+        </fieldset>
+        <br>
+        <br>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Clear form</button>
+
+    </form>
+    
+</body>
+</html>

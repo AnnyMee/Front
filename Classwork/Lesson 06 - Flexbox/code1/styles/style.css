@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.flex-container {
+    /* height: 200px; */
+    height: 800px;
+    background-color: bisque;
+    display: flex;
+    flex-direction: row;   /* указываем направление главное оси */
+    /* все внутренние элементы (flex items) выстраиваются в row */
+    /* чтобы выстроить в строку flex-direction: column */
+    /* варианты: column-reverse & row-reverse */
+    /* gap: 50px;  gap между боксами */
+    justify-content: space-between; /* отвечает за расположение по основной оси */
+    /* align-items: center;  выравнивание по перекрестной оси */
+    /* align-items: end; */
+    /* align-items: stretch; */
+    align-items: flex-start;
+    flex-wrap: wrap; /* перенос элементов на следующую строку */
+    /* чтобы при сужения экрана блоки переносились в новую строку и оставались в центрк - используем justify-content: center; */
+
+}
+.flex-item {
+    height: 100px;
+    width: 100px;
+    background-color: lightgreen;
+    font-size: 48px;
+    font-weight: 700;
+    border: 1px solid blue;
+    /* display: none; убирает отображенные элементы */
+}

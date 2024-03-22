@@ -1,0 +1,12 @@
+.bgimg {
+    width: 1200px;
+    height: 734px;
+    background-image: url("../images/cats.jpg");
+    background-repeat:no-repeat;
+    background-color: cadetblue;
+    background-size: cover;
+    background-position: center;
+}
+.text {
+    font-size: 50px;
+}
